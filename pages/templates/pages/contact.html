@@ -1,0 +1,73 @@
+{%extends "pages/contact-nav.html" %} {% load static %} {% block content %}
+<div class="container" style="margin-top: -406px; margin-bottom: 118px">
+  <section
+    class="section-container"
+  >
+    <h2>Emails</h2>
+
+    <div class="box" style="display: flex; gap: 50px">
+      <div>General Equity <p>Info@accountmanager.com</p> </div>
+      <div>Technical Support  <p>Info@accountmanager.com</p></div>
+      <div>B2B Partnership  <p>Info@accountmanager.com</p></div>
+    </div>
+    <h2>Socials</h2>
+    <div class="box" style="display: flex; gap: 78px">
+      <div> <img src="{% static 'pages/images/instagram.svg'%}" alt="instagram"> Instagram</div>
+      <div>  <img src="{% static 'pages/images/twitter.svg'%}" alt="instagram">Twitter</div>
+      <div>  <img src="{% static 'pages/images/facebook.svg'%}" alt="facebook">Facebook</div>
+      <div> <img src="{% static 'pages/images/medium.svg'%}" alt="medium">Medium</div>
+    </div>
+  </section>
+
+       <div class="element">
+          <section class="section-beutifier jumbotron">
+            <img src="{% static 'pages/images/Group (2).svg' %}" alt="" />
+            <p>
+              <br />
+              <span style="font-size: 20px">Got any Questions? </span>
+              <br />
+              Just send us a message with your question. Feel free to ask about
+              anything.
+              <span>
+                <br /><br />
+                <span>
+                  <a href="#"
+                    ><img
+                      src="{% static 'pages/images/whatsapp.svg' %}"
+                      alt="Whatsapp icon" /></a
+                ></span>
+                <span>
+                  <a href="#"
+                    ><img
+                      src="{% static 'pages/images/telegram.svg' %}"
+                      alt="telegram icon"
+                  /></a>
+                </span>
+                <span>
+                  <a href="#"
+                    ><img
+                      src="{% static 'pages/images/mail.svg' %}"
+                      alt="mail icon"
+                  /></a>
+                </span>
+              </span>
+            </p>
+          </section>
+        </div>
+</div>
+
+<script type="javascript">
+      window.addEventListener('scroll', ()=>{
+  let Menu = document.getElementById('mainmenu')
+ let scrollTo = window.scrollTo(0, 300)
+   if(scrollTo){
+     console.log('Yeah!')
+     Menu.classList.remove('mainmenu-area')
+
+  } 
+
+  Menu.classList.add('mainmenu-area')
+
+  })
+</script>
+{% endblock content %}

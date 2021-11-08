@@ -1,0 +1,30 @@
+
+// Custom Overlay 
+@mixin overlay-dark($opacity: .7)
+    position: absolute
+    top: 0
+    left: 0
+    width: 100%
+    height: 100%
+    background: #000
+    opacity: $opacity
+
+// Gradint Color
+@mixin gradint($diraction: left)
+    background: -webkit-linear-gradient(to $diraction, #3468fe, #2787ec)
+    background: -moz-linear-gradient(to $diraction, #3468fe, #2787ec)
+    background: -ms-linear-gradient(to $diraction, #3468fe, #2787ec)
+    background: -o-linear-gradient(to $diraction, #3468fe, #2787ec)
+    background: linear-gradient(to $diraction, #3468fe, #2787ec)
+
+// Input placeholder color Change
+@mixin placeholder-color($color) 
+    &::-webkit-input-placeholder 
+        color: $color
+    &:-moz-placeholder 
+        color: $color
+    &::-moz-placeholder 
+        color: $color
+    &:-ms-input-placeholder 
+        color: $color
+

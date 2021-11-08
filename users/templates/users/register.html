@@ -1,0 +1,13 @@
+{%extends "pages/base.html" %}
+{% load crispy_forms_tags %}
+  
+{% block content %} 
+{% comment %} USER REGISTRATION FORM {% endcomment %}
+<form method="POST" class="logregform">
+    {% csrf_token %}
+    <h1>REGISTER</h1>
+    {{form| crispy}}
+    <p><button class="btn btn-primary btn-sm">Sign Up</button></p>
+    <div><small>Already Have An account? <a href="{% url 'login' %}">Sign In</a></small></div>
+</form>
+{% endblock content %}

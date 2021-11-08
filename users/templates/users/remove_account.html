@@ -1,0 +1,22 @@
+{% load crispy_forms_tags %}
+<form action="{% url 'account_delete' mt_account.id %}" method="POST" id="account_delete_form">
+  {% csrf_token %}
+  <button type="submit" class="btn btn-danger btn-sm" value="{{ mt_account.id }}" id="remove_account_button" data-toggle="modal" data-target="#exampleModal">Remove</button>
+</form>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+      </div>
+      <div class="modal-body">
+        <p>Account is been deleted please wait</p>
+      </div>
+      <div class="modal-footer">
+          <a href="{% url 'account' %}" class="btn btn-primary btn-sm"> Close</a>
+      </div>
+    </div>
+  </div>
+</div>

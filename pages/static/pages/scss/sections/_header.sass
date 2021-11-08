@@ -1,0 +1,166 @@
+
+/* Header Area Start */
+.header
+    position: fixed
+    top: 0
+    left: 0
+    width: 100%
+    z-index: 99
+    &.nav-fixed
+        background: #fff
+        box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.15)
+        .top-header
+            display: none
+    /* Top Header Area Start */
+    .top-header
+        padding: 10px 0px 5px
+        border-bottom: 1px solid rgba(0, 0, 0, 0.20)
+        .content
+            display: flex
+            justify-content: space-between
+            overflow: hidden
+            .left-content
+                .left-list
+                    display: flex
+                    p
+                        margin-bottom: 0px
+                        color: #485d7b
+                    .currency-selector
+                        margin-left: 10px
+                        .currency
+                            border: 0px
+                            background: none
+                            color: #485d7b
+            .right-content
+                .right-list
+                    display: flex
+                    .language-selector
+                        .language
+                            border: 0px
+                            background: none
+                            color: #485d7b
+                .social-link
+                    display: inline-block
+                    li
+                        display: inline-block
+                        a
+                            color: #485d7b
+                            font-size: 14px
+                            margin-left: 4px
+                            margin-bottom: 0px
+                            transition: $transition
+                            &:hover
+                                color: $base-color 
+/* Main Menu Area Start */  
+.mainmenu-area
+    .navbar
+        padding: 0px 0px
+        .navbar-brand
+            padding: 0px
+            margin: 0px
+        .mybtn1
+            margin-left: 20px
+        #main_menu
+            .navbar-nav
+                .nav-item
+                    .dropdown-menu
+                        position: absolute
+                        z-index: 99
+                        margin-top: 0px !important
+                        background: #fff
+                        border-radius: 0px
+                        border: 0px
+                        padding-bottom: 0px
+                        padding-top: 0px
+                        box-shadow: 0px 8px 14px 0px rgba(0, 0, 0, 0.15)
+                        border-top: 4px solid $base-color
+                        transition: all linear .3s
+                        .dropdown-item
+                            line-height: 26px
+                            font-size: 16px
+                            font-weight: 600
+                            text-transform: uppercase
+                            padding: 8px 15px 8px
+                            border-bottom: 1px solid rgba(0, 0, 0, 0.10)
+                            transition: all linear .3s
+                            i
+                                margin-right: 5px
+                                font-size: 12px
+                        
+                            &:hover
+                                color: $base-color
+                            &:focus
+                                background: none
+                    .nav-link
+                        color: $heading-color
+                        line-height: 26px
+                        font-size: 16px
+                        font-weight: 600
+                        position: relative
+                        padding: 25px 10px
+                        text-transform: uppercase
+                        transition: all linear .3s
+                        &.active,
+                        &:hover 
+                            color: $base-color
+
+.header     
+    &.inner-page
+        &.nav-fixed
+            .mainmenu-area
+                .navbar
+                    .navbar-brand
+                        img
+                            -webkit-filter: unset
+                            filter: unset
+                    #main_menu
+                        .navbar-nav
+                            .nav-item
+                                .nav-link
+                                    color: $heading-color
+                                    &.active,
+                                    &:hover
+                                        color: $base-color
+                                    
+        .top-header
+            border-bottom: 1px solid rgba(#fff, 0.3)
+            .content
+                .left-content
+                    .left-list
+                        p
+                            color: #fff 
+                        .currency-selector
+                            .currency
+                                color: #fff 
+                .right-content
+                    .right-list
+                        p
+                            color: #fff 
+                        .language-selector
+                            .language
+                                color: #fff 
+                        .social-link
+                            li
+                                a
+                                    color: #fff
+        .mainmenu-area
+            .navbar
+                .navbar-brand
+                    img
+                        -webkit-filter: brightness(0) invert(1)
+                        filter: brightness(0) invert(1)
+                #main_menu
+                    .navbar-nav
+                        .nav-item
+                            .nav-link
+                                color: #fff
+                                &.active,
+                                &:hover
+                                    color: #eee
+
+
+
+
+
+
+

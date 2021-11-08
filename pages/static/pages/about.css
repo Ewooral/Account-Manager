@@ -1,0 +1,289 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+.about-header {
+  position: fixed;
+  top: -233px;
+  left: 0;
+  width: 100%;
+  z-index: 3999;
+  background-image: url("../../static/pages/images/Component 1.png");
+  height: 45%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.makemewhite {
+    margin-top: -23px;
+    font-size: 18px;
+}
+
+.makemewhite img {
+    height: 22px;
+}
+.makemewhite span {
+  color: #ffffff;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.mainmenu-area .navbar {
+  margin-top: 233px;
+}
+/* Top about-header Area Start */
+
+.about-header.nav-fixed {
+  background: #fff;
+  /*-webkit-box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.15);*/
+  /*box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.15);*/
+}
+.about-header.nav-fixed .top-about-header {
+  display: none;
+}
+.about-header .top-about-header {
+  padding: 10px 0px 5px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+.about-header .top-about-header .content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  overflow: hidden;
+}
+.about-header .top-about-header .content .left-content .left-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.about-header .top-about-header .content .left-content .left-list p {
+  margin-bottom: 0px;
+  color: #485d7b;
+}
+.about-header
+  .top-about-header
+  .content
+  .left-content
+  .left-list
+  .currency-selector {
+  margin-left: 10px;
+}
+.about-header
+  .top-about-header
+  .content
+  .left-content
+  .left-list
+  .currency-selector
+  .currency {
+  border: 0px;
+  background: none;
+  color: #485d7b;
+}
+.about-header .top-about-header .content .right-content .right-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.about-header
+  .top-about-header
+  .content
+  .right-content
+  .right-list
+  .language-selector
+  .language {
+  border: 0px;
+  background: none;
+  color: #485d7b;
+}
+.about-header .top-about-header .content .right-content .social-link {
+  display: inline-block;
+}
+.about-header .top-about-header .content .right-content .social-link li {
+  display: inline-block;
+}
+.about-header .top-about-header .content .right-content .social-link li a {
+  color: #485d7b;
+  font-size: 14px;
+  margin-left: 4px;
+  margin-bottom: 0px;
+  -webkit-transition: all 0.3s ease-in;
+  -o-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
+}
+.about-header
+  .top-about-header
+  .content
+  .right-content
+  .social-link
+  li
+  a:hover {
+  color: #2364d2;
+}
+
+.mainmenu-area .navbar #main_menu .navbar-nav .nav-item .nav-link {
+  text-transform: capitalize;
+  color: #ffffff;
+}
+
+.mega-box {
+  position: absolute;
+  top: 75px;
+  background: #001660;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  opacity: 0;
+  visibility: hidden;
+  background-image: url("../../static/pages/images/Component 1.png");
+  transition: all 1s ease-in-out;
+  animation: alternate;
+}
+
+.content header {
+  font-size: 27px;
+  color: #ffffff;
+  font-weight: bolder;
+}
+.content p {
+  color: #aaaaaa;
+}
+
+@media (max-width: 991px) {
+  .mega-box {
+    margin-left: 60px;
+  }
+}
+/*ABOUT PAGE CODES*/
+.about-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+@media screen and (max-width: 568px) {
+  .contents {
+    flex-wrap: wrap;
+  }
+}
+.divideme {
+  margin-top: 10%;
+}
+.hero {
+  width: 100%;
+  position: relative;
+  scroll-snap-type: y mandatory;
+}
+
+
+.footer {
+  z-index: 2000;
+}
+
+/* Rectangle 175 */
+.Rectangle175 {
+  display: block;
+  width: 15px;
+  height: 15px;
+  margin: 12px;
+  cursor: pointer;
+  border-radius: 20px;
+  background: #929292;
+  transition: 0.5s ease-in-out;
+}
+.active {
+  height: 45px;
+  background: #0b0b0b;
+}
+
+.jumbotron {
+  height: fit-content;
+}
+/* Rectangle 4 */
+
+.social-container {
+  width: 130.04px;
+  height: 69.36px;
+  background: #131f2d;
+  border-radius: 34.6776px;
+  padding: 1.3vw;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+span img {
+  background: #000;
+  padding: 0.5vw;
+  height: 35px;
+  border-radius: 20px;
+  width: 65px;
+}
+
+#last-image img {
+  margin-left: 133px;
+}
+
+@media screen and (min-width: 1200px) {
+  .Bayern-Munich-is-the-worse-team-ever-Group29 {
+    left: 1154.49px;
+  }
+}
+
+.containerisation {
+  width: 75vw;
+  height: 400px;
+  padding: 2px;
+  overflow: auto;
+  position: relative;
+  background: #f6f6f6f6;
+  left: -70px;
+}
+
+.element {
+  height: 400px;
+  scroll-margin: 10px;
+  scroll-snap-align: start;
+  scroll-snap-stop: normal;
+  color: white;
+  font-size: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+    scroll-behavior: smooth;
+    transition: all .5s ease-in-out;
+
+}
+.wrapper .element {
+  height: 400px;
+  transition: all .5s ease-in-out;
+  scroll-behavior: smooth;
+}
+
+.y-mandatory {
+  scroll-snap-type: y mandatory;
+}
+
+.y-scroll .element {
+  margin-bottom: 10px;
+}
+
+.section-beutifier {
+  padding: 1.5em;
+  font-family: Montserrat Alternates;
+  display: flex;
+  gap: 40px;
+  color: #ffffff;
+}
+
+.slider {
+  position: fixed;
+  top: 388px;
+  left: 1367px;
+}
+.section-beutifier span {
+  font-size: 20px;
+  font-family: Montserrat Alternates;
+  font-weight: bold;
+  color: #595959;
+}

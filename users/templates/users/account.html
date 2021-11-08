@@ -1,0 +1,27 @@
+{% extends "pages/base.html" %}
+{% load crispy_forms_tags %}
+{% load humanize %}
+
+{% block content %}
+{% comment %} USER LOGIN FORM {% endcomment %}
+    <h1 class="account-h1">Account</h1>
+    <h5>Account Name: {{user.username}}</h5>
+    <p>Account Image:<img src="{{ user.profile.image.url }}" alt="Profile Image"></p>
+
+<form method="POST" enctype="multipart/form-data">
+    {% csrf_token %}
+    <h2>UPDATE</h2>
+    {{u_form| crispy}}
+    {{p_form| crispy}}
+    <button type="submit" class="btn btn-primary btn-sm">Update</button>
+</form>
+<br>
+
+<h3 class="text-center">Add Accounts</h3>
+
+<div id="mt_accounts_section">
+    {% include "users/account_form.html" %}
+</div>
+
+</form>
+{% endblock content %}

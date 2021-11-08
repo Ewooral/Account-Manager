@@ -1,0 +1,509 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+li {
+  list-style: none;
+}
+
+.wrapMe {
+  display: flex;
+  width: 140%;
+}
+.left {
+  display: flex;
+  justify-content: flex-end;
+}
+.right {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.portfoliocolor {
+  color: rgb(80, 129, 202);
+  font-size: large;
+}
+.portfolio-responsive {
+  display: block;
+  width: 100%;
+  overflow-x: auto;
+}
+/* body {
+  background: #fafafa;
+  color: #333333;
+  margin-top: 5rem;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #444444;
+}
+
+ul {
+  margin: 0;
+}
+
+.bg-steel {
+  background-color: #5f788a;
+}
+
+.site-header .navbar-nav .nav-link {
+  color: #cbd5db;
+}
+
+.site-header .navbar-nav .nav-link:hover {
+  color: #ffffff;
+}
+
+.site-header .navbar-nav .nav-link.active {
+  font-weight: 500;
+}
+
+.content-section {
+  background: #ffffff;
+  padding: 10px 20px;
+  border: 1px solid #dddddd;
+  border-radius: 3px;
+  margin-bottom: 20px;
+}
+
+.article-title {
+  color: #444444;
+}
+
+a.article-title:hover {
+  color: #428bca;
+  text-decoration: none;
+}
+
+.article-content {
+  white-space: pre-line;
+}
+
+.article-img {
+  height: 65px;
+  width: 65px;
+  margin-right: 16px;
+}
+
+.article-metadata {
+  padding-bottom: 1px;
+  margin-bottom: 4px;
+  border-bottom: 1px solid #e3e3e3
+}
+
+.article-metadata a:hover {
+  color: #333;
+  text-decoration: none;
+}
+
+.article-svg {
+  width: 25px;
+  height: 25px;
+  vertical-align: middle;
+}
+
+.account-img {
+  height: 125px;
+  width: 125px;
+  margin-right: 20px;
+  margin-bottom: 16px;
+}
+
+.account-heading {
+  font-size: 2.5rem;
+} */
+h1.portfolio-h1 {
+  margin-top: 30px;
+  font-size: 21px;
+  margin-bottom: 60px;
+}
+ul.portfolio-ul {
+  margin-top: 50px;
+}
+li.list-group-item.portfolio-list {
+  border: 1px solid dodgerblue;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  width: 100%;
+}
+li.portfolio-list > div {
+  float: left;
+}
+.area1 {
+  width: 35%;
+}
+.area2,
+.area3,
+.area4,
+.area5 {
+  width: 15%;
+  text-align: center;
+}
+p.area_p_1 {
+  color: dodgerblue;
+  font-weight: bold;
+  margin: 0;
+  padding: 0;
+}
+.area1 p,
+p.area_p_2 {
+  font-size: 12px;
+  color: darkgray;
+  margin-bottom: 0;
+}
+.area6 {
+  width: 27px;
+  text-align: center;
+  border-radius: 5px;
+  height: 27px;
+  line-height: 1.5;
+  float: right !important;
+  cursor: pointer;
+  background: rgba(0, 0, 0, 0.07);
+}
+.area-p-arrow-option {
+  color: dodgerblue;
+}
+@media (min-width: 768px) {
+  .col-lg-8 {
+    max-width: 100%;
+    flex: 0 0 100%;
+  }
+}
+@media (min-width: 992px) {
+  .col-lg-8 {
+    max-width: 100%;
+    flex: 0 0 100%;
+  }
+}
+@media (min-width: 590px) {
+  .col-lg-8 {
+    max-width: 100%;
+    flex: 0 0 100%;
+  }
+  .area1 {
+    width: 25%;
+  }
+  .area2,
+  .area3,
+  .area4,
+  .area5 {
+    width: 17%;
+    text-align: center;
+  }
+}
+@media (max-width: 590px) {
+  .col-lg-8 {
+    max-width: 100%;
+    flex: 0 0 100%;
+  }
+  li.portfolio-list {
+    text-align: center;
+  }
+  .area2,
+  .area3,
+  .area4,
+  .area5 {
+    width: 100%;
+    text-align: center;
+  }
+  li.portfolio-list > div {
+    float: none;
+  }
+  .area1 {
+    width: 100%;
+  }
+}
+
+/* Account page */
+h1.account-h1 {
+  margin-top: 110px;
+}
+h2.account-added-accounts-h2 {
+  margin: 40px 0 20px;
+}
+ul.account-added-account-list-ul li a {
+  color: red;
+  font-weight: bold;
+  text-decoration: underline;
+}
+form.add-account-form {
+  margin-top: 20px;
+}
+form.add-account-form label {
+  width: 160px;
+}
+form.add-account-form button {
+  margin-top: 15px;
+}
+
+/* LANDING PAGE'S CSS CODES. */
+.free-sign-up-background-color {
+  background: #131f2d;
+  text-transform: lowercase;
+}
+
+.section-heading {
+  text-align: start;
+}
+.header.nav-fixed {
+  background: #f6f6f6;
+}
+
+@media (min-width: 1200px) {
+  .vector-container {
+    max-width: 1798px;
+  }
+}
+
+.section-heading .subtitle {
+  font-size: 28px;
+  line-height: 38px;
+  font-weight: 600;
+  color: #595959;
+  margin-bottom: 11px;
+}
+
+.footer {
+  background: #001660;
+  z-index: 2000;
+  width: 100%;
+  left: 0;
+  bottom: 0;
+  font-family: "Montserrat Alternates";
+}
+.h4-color-white {
+  color: white;
+  text-transform: lowercase;
+  font-size: small;
+}
+.footer .footer-widget .title {
+  font-size: 16px;
+  line-height: 38px;
+  font-weight: 600;
+  text-transform: lowercase;
+}
+
+.img-space {
+  margin-left: 50px;
+}
+.img-header-space {
+  margin-left: -23px;
+}
+
+body {
+  background-color: #f6f6f6;
+}
+.img {
+  width: 100%;
+}
+.shift {
+  margin-top: 100px;
+}
+
+.why-choose-us {
+  background-color: #ffffff;
+}
+.above-wave {
+  background-color: #f6f6f6;
+}
+
+.nav-item .nav-link .login-menu {
+  border: 2px solid #2f86ff;
+  padding: 10px;
+  border-radius: 30px;
+  color: #2f86ff;
+}
+.hero-area .left-content .content .title {
+  font-family: "Montserrat Alternates";
+  color: #595959;
+}
+.section-heading .subtitle {
+  font-weight: bolder;
+}
+.section-heading .text {
+  font-weight: bold;
+  font-size: 13px;
+}
+
+.nav-item .nav-link .start-menu {
+  background-color: #2f86ff;
+  color: #ffffff;
+  padding: 10px;
+  border-radius: 30px;
+  border: 2px solid transparent;
+}
+.nav-item .nav-link .start-menu:hover {
+  background-color: #f6f6f6;
+  border: 2px solid #2f86ff;
+  color: #2f86ff;
+  padding: 10px;
+  border-radius: 30px;
+}
+.jonkuto {
+  display: flex;
+  flex-wrap: nowrap;
+}
+.mega-box {
+  position: absolute;
+  top: 75px;
+  background: #f6f6f6;
+  padding: 2vh;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  opacity: 0;
+  visibility: hidden;
+}
+.navbar-nav li:hover .mega-box {
+  opacity: 1;
+  visibility: visible;
+  transition: all 0.3s ease;
+}
+.navbar-nav {
+  font-family: "Montserrat Alternates";
+  color: #595959;
+}
+.content {
+  margin-left: 12px;
+  margin-top: 18px;
+}
+.content header {
+  font-size: 27px;
+  color: #595959;
+  font-weight: bolder;
+}
+.content p {
+  font-size: 13px;
+  margin-top: -4px;
+  color: #595959;
+  font-weight: bold;
+}
+.mainmenu-area .navbar #main_menu .navbar-nav .nav-item .nav-link {
+  text-transform: capitalize;
+  color: #595959;
+}
+.nav-item .nav-link .login-menu:hover {
+  background-color: #2f86ff;
+  color: #ffffff;
+}
+
+.navbar-brand img {
+  width: 206px;
+  margin-bottom: 6px;
+}
+.nav-link #hide {
+  display: none;
+}
+
+.nav-link:hover #hide {
+  display: inline-block;
+}
+.nav-link:hover #show {
+  display: none;
+  opacity: 0;
+  transition: all 0.7s ease-out;
+}
+
+.nav-link img {
+  width: 11px;
+  margin-top: 1px;
+  margin-left: 5px;
+}
+@media (min-width: 990px) and (max-width: 1190px) {
+  .nav-item .nav-link .login-menu {
+    border: 2px solid #2f86ff;
+    color: #2f86ff;
+    padding: 8px;
+    border-radius: 30px;
+    font-size: 13px;
+  }
+  .nav-item .nav-link .start-menu {
+    background-color: #2f86ff;
+    color: #ffffff;
+    padding: 8px;
+    border-radius: 30px;
+    font-size: 13px;
+    border: 2px solid transparent;
+  }
+  .nav-item .nav-link .start-menu:hover {
+    background-color: #ffffff;
+    border: 2px solid #2f86ff;
+    color: #2f86ff;
+    padding: 8px;
+    border-radius: 30px;
+  }
+}
+
+.header.nav-fixed {
+  box-shadow: 0 0 1px 0;
+}
+
+/*FOOTER CODES*/
+.img-header-space img {
+  margin-left: 23px;
+}
+
+.footer-paragraph {
+  color: #007bff;
+}
+
+footer .container {
+  margin-top: 100px;
+}
+.footer .footer-widget .titles {
+  margin-top: 40px;
+  text-transform: capitalize;
+}
+
+.link-list li a {
+  color: #ffffff;
+}
+
+.footer-line {
+  background-image: url("../pages/images/Line 8.svg");
+}
+hr {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  border: 0;
+  border-top: 1px solid rgb(101 101 101);
+}
+
+.footer-space {
+  margin-left: 100px;
+}
+.footer-spaces {
+  margin-left: 172px;
+}
+
+@media (max-width: 990px) {
+  .footer-space {
+    margin-left: 0;
+  }
+  .footer-spaces {
+    margin-left: 0;
+  }
+}
+
+.footers-foot {
+  display: flex;
+  justify-content: space-around;
+}
+#scrollTop {
+  margin-bottom: 10px;
+}
+.footers-foot :last-child {
+  color: #ffffff;
+}
+#palm-tree {
+  transform: rotate(180deg);
+  position: absolute;
+  width: 100%;
+  left: 0;
+  top: 0;
+}
+
+html {
+  scrollbar-color: #6969dd #e0e0e0;
+  scrollbar-width: thin;
+}

@@ -1,0 +1,39 @@
+{% load crispy_forms_tags %}
+{% load humanize %}
+
+<div class="container mt-4" style="margin-top: 50px;">
+    <div class="row">
+        <div class="col-xs-5 col-sm-6 col-md-6 mr-auto mb-3">
+            <h5>Enter account information</h5>
+            <form action="." class="account_form" method="post">
+                {% csrf_token %}
+                {{ form | crispy }}
+                {{ input_form | crispy }}
+                <div class="d-flex">
+                    <button class="btn btn-primary" type="submit">Add</button>
+                </div>
+            </form>
+        </div>
+    </div>
+  <p id="posting_data" class="alert text-center"></p>
+    <div class="row">
+        {% for mt_account in requested_accounts %}
+        <div class="col-xs-6 col-sm-6 col-md-4 mb-3">
+            <div class="card text-white bg-primary mb-3" style="max-width: 18rem;">
+                <div class="card-header d-flex">Account {{ mt_account.pk }}</div>
+                <div class="card-body">
+                    <h5 class="card-title text-white">{{ mt_account.account_name }}</h5>
+                </div>
+                <div class="card-footer">
+                    <div id="remove_account_section">
+                        {% include "users/remove_account.html" %}
+                    </div>
+                </div>
+            </div>
+        </div>
+        {% empty %}
+        <p class="text-muted">No accounts added yet</p>
+        {% endfor %}
+    </div>
+</div>
+

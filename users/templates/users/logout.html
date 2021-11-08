@@ -1,0 +1,8 @@
+{%extends "pages/base.html" %}
+
+
+{% block content %}
+{% comment %} LOG OUT  {% endcomment %}
+    <h1> You have been logged out</h1>
+    <small> <a href="{% url 'login' %}">Log In Again</a></small>
+{% endblock content %}

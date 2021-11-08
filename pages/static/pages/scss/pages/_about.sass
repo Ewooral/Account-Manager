@@ -1,0 +1,109 @@
+/* About Area Start */
+.about
+    padding: 120px 0px 0px
+    .section-heading
+        text-align: left
+        .text
+            margin-bottom: 19px
+    .about-bottom-area
+        background: url(../images/about-bg.png)
+        background-position: center
+        background-size: cover
+        background-repeat: no-repeat
+        padding: 60px 0px 116px
+        .video-box 
+            background: url(../images/avideobg.png)
+            background-position: center
+            background-size: cover
+            background-repeat: no-repeat
+            text-align: center
+            padding: 220px 0px 220px
+            border-radius: 10px
+            margin-bottom: 80px
+        .short-info
+            display: flex
+            .left-area
+                img
+                    width: 90px
+                    height: 90px
+                    margin-right: 30px
+            .right-area
+                flex: 1
+                .title
+                    font-size: 28px
+                    line-height: 38px
+                    font-weight: 700
+                    color: $base-color
+                    margin-bottom: 15px
+                .text
+                    font-size: 18px
+                    line-height: 28px
+                    margin-bottom: 0px
+
+
+.team
+    padding: 110px 0px 100px
+    .section-heading
+        margin-bottom: 57px
+.team-member
+    z-index: 2
+    .member-pic
+        position: relative
+        img
+            border-radius: 38% 62% 61% 39%/32% 47% 53% 68%
+            width: 100%
+    
+        .member-data
+            background-size: 400% 100%
+            text-align: center
+            padding: 12px 20px 13px
+            transition: $transition
+            @include gradint(left)
+            position: absolute
+            z-index: 9
+            bottom: -50px
+            left: 10%
+            width: 80%
+            border-radius: 50px 0px 50px 0px
+            .title
+                font-size: 24px
+                line-height: 34px
+                font-weight: 400
+                margin-bottom: 2px
+                color: #fff
+            
+            .position
+                font-size: 16px
+                line-height: 26px
+                font-weight: 30
+                margin-bottom: 0px
+                color: #fff
+    
+
+    .social
+        margin-top: 80px
+        text-align: center
+        ul
+            padding-left: 0px
+            margin-bottom: 0px
+            li
+                list-style: none
+                display: inline-block
+                a
+                    text-decoration: none
+                    width: 40px
+                    height: 40px
+                    line-height: 40px
+                    font-size: 16px
+                    text-align: center
+                    display: block
+                    border-radius: 50%
+                    color: $base-color
+                    box-shadow: 0px 0px 10px rgba(#000, .13)
+                    margin: 0px 4px
+                    transition: $transition
+                    &:hover
+                        background: $base-color
+                        color: #fff
+
+  

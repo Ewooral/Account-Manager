@@ -1,0 +1,372 @@
+{% load static %} {% comment %} This loads STATIC files like CSS AND JAVASCRIPT
+{% endcomment %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    {% comment %} Required meta tags {% endcomment %}
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    {% comment %} Page's title {% endcomment %} {%if title %}
+    <title>{{title}}</title>
+    {% else %}
+    <title>Account Manager</title>
+    {% endif %}
+
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <!-- favicon -->
+    <link
+      rel="shortcut icon"
+      href="{% static 'pages/favicon.png' %}"
+      type="image/x-icon"
+    />
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="{% static 'pages/bootstrap.min.css' %}" />
+
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'pages/plugin.css' %}" />
+    <link rel="stylesheet" href="{% static 'pages/style.css' %}" />
+    <link rel="stylesheet" href="{% static 'pages/responsive.css' %}" />
+    <link rel="stylesheet" href="{% static 'pages/main.css' %}" />
+    <link rel="stylesheet" href="{% static 'pages/ewooral.css' %}" />
+  </head>
+
+  <body>
+    {% comment %} A MESSAGE THAT CONFIRMS USERS ACCOUNT CREATION{% endcomment %}
+
+    <br>
+    <div class="container">
+      <br><br>
+    <div class="row text-center">
+      <div class="col-xs-6 col-sm-6 col-md-6 ml-auto mr-auto">
+        {% if messages %}
+          {% for message in messages %}
+          <div class="animated bounce alert alert-{{ message.tags }}">
+            <h5>{{ message }}</h5>
+          </div>
+          {% endfor %}
+        {% endif %}
+      </div>
+    </div>
+  </div> {% comment %} NAVIGATION BAR {% endcomment %}
+
+    <!-- preloader area start -->
+    <div class="preloader" id="preloader">
+      <div class="loader loader-1">
+        <div class="loader-outter"></div>
+        <div class="loader-inner"></div>
+      </div>
+    </div>
+
+    <!-- Header Area Start  -->
+    <header class="header">
+      <!--Main-Menu Area Start-->
+      <div class="mainmenu-area">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-12">
+              <nav class="navbar navbar-expand-lg navbar-light">
+                <a class="navbar-brand" href="{% url 'home-page' %}">
+                  <img
+                    src="{% static 'pages/images/logo.svg' %}"
+                    alt=""
+                  />
+                </a>
+                <button
+                  class="navbar-toggler"
+                  type="button"
+                  data-toggle="collapse"
+                  data-target="#main_menu"
+                  aria-controls="main_menu"
+                  aria-expanded="false"
+                  aria-label="Toggle navigation"
+                >
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div
+                  class="collapse navbar-collapse fixed-height"
+                  id="main_menu"
+                >
+                  <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                      <a class="nav-link" href="{% url 'home-page' %}">Home</a>
+                    </li>
+
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">
+                          Company <img id="show"
+                                      src="{% static 'pages/images/Vector (1).svg' %}" alt="image"><img id="hide"
+                                      src="{% static 'pages/images/Vector (2).svg' %}" alt="image"></a>
+
+                       <div class="mega-box">
+                           <img src="{% static 'pages/images/about.svg' %}" alt="about Us">
+                          <div class="content">
+                                 <a href="{% url 'about' %}"><header> About Us </header>
+                                  <p> Learn more about the company and the team</p></a>
+                          </div>
+<p class="img-space"></p>
+                            <img src="{% static 'pages/images/contact.svg' %}" alt="about Us">
+                          <div class="content">
+                                   <a href="{% url 'contact' %}"><header> Contact Us </header>
+                                       <p> Feel free to contact Us</p> </a>
+                          </div>
+
+                       </div>
+                    </li>
+
+
+                    <li class="nav-item">
+                      <a class="nav-link" href="{% url 'portfolio-page' %}"
+                        >Portfolio</a
+                      >
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">System <img id="show"
+                                      src="{% static 'pages/images/Vector (1).svg' %}" alt="image"><img id="hide"
+                                      src="{% static 'pages/images/Vector (2).svg' %}" alt="image"></a>
+
+                       <div class="mega-box">
+                           <img src="{% static 'pages/images/popular.svg' %}" alt="about Us">
+                          <div class="content">
+                                 <a href="#"><header> Most Popular </header>
+                                  <p> Explore our best performing systems </p></a>
+                          </div>
+<p class="img-space"></p>
+                            <img src="{% static 'pages/images/system.svg' %}" alt="about Us">
+                          <div class="content">
+                                   <a href="#"><header> All Systems </header>
+                                       <p> Take a tour through all our systems</p> </a>
+                          </div>
+
+                       </div>
+                    </li>
+
+
+                    <li class="nav-item">
+                      <a class="nav-link" href="{% url 'ranking-page' %}">
+                          Support <img id="show"
+                                      src="{% static 'pages/images/Vector (1).svg' %}" alt="image"><img id="hide"
+                                      src="{% static 'pages/images/Vector (2).svg' %}" alt="image"></a>
+
+                       <div class="mega-box">
+                           <img src="{% static 'pages/images/knowledge.svg' %}" alt="about Us">
+                          <div class="content">
+                                 <a href="#"><header> Knowledge Based </header>
+                                  <p> Learn more about the company and the team </p></a>
+                          </div>
+<p class="img-space"></p>
+                            <img src="{% static 'pages/images/question.svg' %}" alt="about Us">
+                          <div class="content">
+                                   <a href="#"><header> Ask a Question </header>
+                                       <p> Do not hesitate to ask questions</p> </a>
+                          </div>
+
+                       </div>
+                    </li>
+
+                     {% if user.is_authenticated %}
+                    <li class="nav-item">
+                      <a class="nav-link" href="{% url 'account' %}">Account</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="{% url 'logout' %}">Logout</a>
+                    </li>
+                    {% else %}
+                    <li class="nav-item ">
+                      <a class="nav-link " href="{% url 'login' %}"><span class="login-menu">Log In</span></a>
+                    </li>
+                        <li class="nav-item" >
+                        <a href="{% url 'register'%}" class="nav-link"
+                      ><span class="start-menu">Get Started</span></a
+                    >
+                        </li>
+
+                    {% endif %}
+                  </ul>
+                </div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--Main-Menu Area Start-->
+    </header>
+    <!-- Header Area End  -->
+
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-8 mt-5">
+          {% block content %} {% endblock %}
+        </div>
+      </div>
+    </div>
+
+    
+  
+
+    {%block homepage%}
+    
+    {% endblock homepage%}
+
+
+
+    <!-- Footer Area Start -->
+
+    <footer class="footer" id="footer">
+      <div class="container">
+           <img id="palm-tree" src="{% static 'pages/images/Rectangle 210.jpg' %}" alt="Rectangle">
+        <div class="row">
+          <div class="col-sm-6 col-lg-3">
+            <div class="footer-widget info-link-widget ">
+              <h4 class="title h4-color-white">Feel free to contact us</h4>
+              <p class="footer-paragraph">info@accountmanager.com</p>
+              <div class="img-header-space">
+                   <img
+                  src="{% static 'pages/images/ig.png' %}"
+                  alt="ig icon"
+
+                />
+                <img
+                  src="{% static 'pages/images/twitter.png' %}"
+                  alt="twitter icon"
+
+                />
+                  <img
+                  src="{% static 'pages/images/facebook.png' %}"
+                  alt="facebook icon"
+
+                />
+
+                <img
+                  src="{% static 'pages/images/m.png' %}"
+                  alt="m icon"
+
+                />
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-lg-3">
+            <div class="footer-widget info-link-widget footer-spaces">
+              <h4 class="title titles">Assets</h4>
+              <ul class="link-list">
+                <li>
+                  <a href="#">
+                   </i> Portfolio
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                   </i> Dashboard
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    </i> Rankings
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-sm-6 col-lg-3">
+            <div class="footer-widget info-link-widget footer-space">
+              <h4 class="title titles">Company</h4>
+              <ul class="link-list">
+                <li>
+                  <a href="#">
+                   </i>About Us
+                  </a>
+                </li>
+                <li>
+                    <a href="#">
+                 </i>Blog </a>
+                </li>
+                <li>
+                  <a href="#">
+                   </i>Careers
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    </i>Legal
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                   </i>Contact
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-sm-6 col-lg-3">
+            <div class="footer-widget info-link-widget">
+              <h4 class="title titles">Support</h4>
+              <ul class="link-list">
+                <li>
+                  <a href="#">
+                 Knowledge Based
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                   Live Chat
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                  Submit a request
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                   Status Page
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="copy-bg">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-12" id="scrollTop">
+                <hr>
+              <div class="content">
+                <div class="footers-foot">
+                    <p>© 2020 Account manager Limited</p>
+                    <p class="titles"> Terms Privacy Policy Risks Disclosure</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- Footer Area End -->
+
+    <!-- Back to Top Start -->
+    <div class="bottomtotop">
+      <i class="fas fa-chevron-right"></i>
+    </div>
+    <!-- Back to Top End -->
+
+    <!-- jquery -->
+    <script src="{% static 'pages/jquery.js' %}"></script>
+    <!-- popper -->
+    <script src="{% static 'pages/popper.min.js' %}"></script>
+    <!-- bootstrap -->
+    <script src="{% static 'pages/bootstrap.min.js' %}"></script>
+    <!-- plugin js-->
+    <script src="{% static 'pages/plugin.js' %}"></script>
+    <!-- main -->
+    <script src="{% static 'pages/main.js' %}"></script>
+
+    <script src="{% static 'pages/account_manager.js' %}"></script>
+
+    <script src="{% static 'pages/ewooral.js' %}"></script>
+
+  </body>
+</html>

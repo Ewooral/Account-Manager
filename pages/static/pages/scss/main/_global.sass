@@ -1,0 +1,202 @@
+/* Global style */
+
+// Custom btn 
+.mybtn1
+    font-size: 16px
+    text-transform: uppercase
+    font-weight: 600
+    padding: 14px 35px
+    display: inline-block
+    color: #fff
+    border: 0px
+    border-radius: 50px
+    cursor: pointer
+    transition: $transition
+    box-shadow: 0px 10px 10px 0px rgba(28, 75, 154, 0.3)
+    @include gradint(left)
+    &:hover
+        @include gradint(right)
+        color: $white
+        transform: translateY(-2px)
+
+/* Section Heading Css */
+.section-heading
+    text-align: center
+    .subtitle
+        font-size: 28px
+        line-height: 38px
+        font-weight: 600
+        color: $base-color
+        margin-bottom: 11px
+        &.extra-padding
+            margin-bottom: 17px
+    .title
+        font-size: 50px
+        line-height: 60px
+        font-weight: 700
+        color: $heading-color
+        margin-bottom: 10px
+        &.extra-padding
+            margin-bottom: 20px
+    .text
+        font-size: 24px
+        line-height: 36px
+        font-weight: 300
+    
+/* Preloader Css */
+.preloader 
+    position: fixed
+    top: 0
+    left: 0
+    width: 100%
+    height: 100%
+    background-color: $white
+    z-index: 9999999
+    display: flex
+    flex-direction: column
+    align-items: center
+    justify-content: center
+
+    &.hide 
+        opacity: 0
+        display: none
+
+.loader 
+    position: relative
+    width: 60px
+    height: 60px
+    border-radius: 50%
+    margin: 75px
+    display: inline-block
+    vertical-align: middle
+
+.loader-1 .loader-outter 
+    position: absolute
+    border: 4px solid $base-color
+    border-left-color: transparent
+    border-bottom: 0
+    width: 100%
+    height: 100%
+    border-radius: 50%
+    -webkit-animation: loader-1-outter 1s cubic-bezier(.42, .61, .58, .41) infinite
+    animation: loader-1-outter 1s cubic-bezier(.42, .61, .58, .41) infinite
+
+.loader-1 .loader-inner 
+    position: absolute
+    border: 4px solid $base-color
+    border-radius: 50%
+    width: 40px
+    height: 40px
+    left: calc(50% - 20px)
+    top: calc(50% - 20px)
+    border-right: 0
+    border-top-color: transparent
+    -webkit-animation: loader-1-inner 1s cubic-bezier(.42, .61, .58, .41) infinite
+    animation: loader-1-inner 1s cubic-bezier(.42, .61, .58, .41) infinite
+
+/* bottomtotop Css */
+.bottomtotop i
+    width: 50px
+    height: 50px
+    line-height: 50px
+    position: fixed
+    font-size: 14px
+    text-align: center
+    border-radius: 50%
+    color: $white
+    cursor: pointer
+    transform: rotate(-90deg)
+    bottom: 15px
+    right: 15px
+    box-shadow: 0px 0px 21px 0px rgba(0, 0, 0, 0.20)
+    z-index: 999
+    transition: all linear .3s
+    background: $base-color
+  
+
+
+
+/* Breadcrumb Area Start */
+.breadcrumb-area
+    padding: 215px 0px 115px
+    background: url(../images/bc-bg-2.jpg)
+    background-repeat: no-repeat!important
+    background-position: center!important
+    background-size: cover!important 
+    &.extra-padding
+        padding: 215px 0px 118px
+    &.extra-extra-padding
+        padding: 215px 0px 171px
+    .title
+        font-size: 50px
+        line-height: 60px
+        font-weight: 600
+        margin-bottom: 15px
+        color: #fff
+        &.extra-padding
+            margin-bottom: 26px
+    .breadcrumb-list
+        li
+            display: inline-block
+            span
+                margin: 0px 7px
+                color: #fff
+            a
+                font-size: 16px
+                transition: $transition
+                color: #fff
+                &:hover
+                    color: #f1f1f1
+                &.active
+                    color: #f1f1f1
+
+/* Popup Video CSS */
+.video-play-btn 
+    display: inline-block
+    width: 70px
+    height: 70px
+    line-height: 72px
+    text-align: center
+    font-size: 26px
+    background-color: $white
+    border-radius: 50%
+    position: relative
+    z-index: 1
+    &:before 
+        content: ""
+        position: absolute
+        z-index: 0
+        left: 50%
+        top: 50%
+        transform: translate(-50%,-50%)
+        display: block
+        width: 80px
+        height: 80px
+        background: rgba($white, .80)
+        border-radius: 50%
+        animation: pulse-border 1500ms ease-out infinite
+        z-index: -1
+    
+    i
+        position: inherit
+        z-index: 9
+    
+@-webkit-keyframes pulse-border
+    0% 
+        transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1)
+        opacity: 1
+    
+    100% 
+        transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1.3)
+        opacity: 0
+@keyframes pulse-border
+    0% 
+        transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1)
+        opacity: 1
+    
+    100% 
+        transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1.3)
+        opacity: 0
+    
+
+/* Popup Video CSS */

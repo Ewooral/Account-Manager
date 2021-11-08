@@ -1,0 +1,63 @@
+{%extends "pages/base.html" %} {% block content %} {% load static %}
+<!-- Hero Area Start -->
+<section class="above-wave">
+<div class="hero-area">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-6 d-flex align-self-center">
+        <div class="left-content">
+          <div class="content">
+            <h1 class="title">Forex Trading With an Edge.</h1>
+            <p class="text">
+              Trading Forex is hard but with AccountManager it becomes a bit
+              easier. Take advantage of our many trading tools which are used by
+              millions of forex traders.
+            </p>
+            <div class="links">
+              <a href="#" class="mybtn1 free-sign-up-background-color link1"
+                ><span>Free Sign Up</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6 order-first order-lg-last">
+        <div class="right-img">
+          <img src="{% static 'pages/images/heroright2.png' %}" alt="" />
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</section>
+{% endblock content %} {% block homepage %}
+
+<!-- Why Choose us Area Start -->
+<section class="why-choose-us">
+<img class="img" src="{% static 'pages/images/Group.svg' %}" alt="" />
+  <div class="container shift">
+    <div class="row justify-content-center">
+      <div class="col-lg-6 col-md-10 mt-5">
+        <div class="section-heading">
+          <h5 class="subtitle">How can AccountManager help you?</h5>
+          <h2 class="text">
+            Analyze your Forex Trading account with our advanced statistics. Use
+            our innovative dashboard to stay up to date with the Forex market.
+            Use your trade analysis page as a resume of your trading skills.
+            Learn, compare and improve your trading skills with the help of our
+            Forex Forum. Publish your account statement with our Trading
+            Analysis and Tracking.
+          </h2>
+          <h5 class="subtitle">How does it work?</h5>
+          <p class="text">
+            As a Forex Trader, your account's safety is our first priority. We
+            will never ask you for your login details to your Forex trading
+            account. All we require is a read only access to your trading
+            account.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+{% endblock homepage %}
